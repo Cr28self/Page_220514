@@ -46,7 +46,7 @@
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             
-                            <a class="nav-link" href="index.html">
+                            <a class="nav-link" href="../index.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard
                             </a>
@@ -73,6 +73,11 @@
                                     <a class="nav-link" href="../Teacher/teacher-contract.html">강의 계약서 관리</a>
                                 </nav>
                             </div>
+
+                            <a class="nav-link" href="index.html">
+                                <div class="sb-nav-link-icon"><i class="fa-regular fa-calendar"></i></div>
+                                학습 계획표 처리
+                            </a>
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">
@@ -103,8 +108,9 @@
                                     <div><i class="fas fa-table me-1"></i> 학습자</div>
                                     
                                     <div class="justify-content-end">
-                                        <input class="btn btn-primary btn-xs" value="Choose">
-                                        <input class="btn btn-danger btn-xs" value="Delete">
+                                        <input id="Add" class="btn btn-primary btn-xs" value="추가">
+
+                                        <input id="Edit" class="btn btn-danger btn-xs" value="수정">
                                     </div>
                                 </div>
 
@@ -119,24 +125,26 @@
                                     <!-- Attribute -->
                                     <thead>
                                         <tr>
-                                            <th>Name</th>
-                                            <th>Position</th>
-                                            <th>Office</th>
-                                            <th>Age</th>
-                                            <th>Start date</th>
-                                            <th>Salary</th>
+                                            <th>ID</th>
+                                            <th>비밀번호</th>
+                                            <th>이름</th>
+                                            <th>성별</th>
+                                            <th>생일</th>
+                                            <th>전화번호</th>
+                                            <th>이메일</th>
                                         </tr>
                                     </thead>
                                     <!-- end of Attribute -->
 
                                     <tfoot>
                                         <tr>
-                                            <th>Name</th>
-                                            <th>Position</th>
-                                            <th>Office</th>
-                                            <th>Age</th>
-                                            <th>Start date</th>
-                                            <th>Salary</th>
+                                            <th>ID</th>
+                                            <th>비밀번호</th>
+                                            <th>이름</th>
+                                            <th>성별</th>
+                                            <th>생일</th>
+                                            <th>전화번호</th>
+                                            <th>이메일</th>
                                         </tr>
                                     </tfoot>
 
@@ -632,5 +640,8 @@
         <!-- <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script> -->
         <script src="../js/datatables.js"></script>
         <script src="../js/datatables-simple-demo.js"></script>
+
+
+        <script src="script.js"></script>
     </body>
 </html>
